@@ -66,7 +66,8 @@ angular.module('app.routes', ['ionicUIRouter'])
   .state('login', {
     url: '/login',
     templateUrl: 'templates/login.html',
-    controller: 'loginCtrl'
+    controller: 'loginCtrl',
+      controllerAs : "account"
   })
 
   .state('signUp', {
