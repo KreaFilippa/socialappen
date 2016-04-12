@@ -6,11 +6,13 @@
         </div>
         <div style="width: 300px; height: 52px;" class="spacer"></div>
         <ion-list style="">
-            <ion-item style="" class="item-thumbnail-left">
+            <ion-item ng-click="viewchat(chat)" style="" class="item-thumbnail-left" ng-repeat="chat in chats">
                 <img>
-                <h2>Chat 1</h2>
+                <h2>{{chat.name}}</h2>
                 <p>Message</p>
+                
             </ion-item>
+            
         </ion-list>
         <div style="width: 300px; height: 63px;" class="spacer"></div>
         <div style="text-align: center;">

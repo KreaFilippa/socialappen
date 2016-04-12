@@ -29,6 +29,15 @@ angular.module('app.routes', ['ionicUIRouter'])
       }
     }
   })
+  .state('tabsController.chatdetails', {
+    url: '/detail/:chatid',
+    views: {
+      'tab2': {
+        templateUrl: 'templates/chatdetails.html',
+        controller: 'chatDetailsCtrl'
+      }
+    }
+  })
 
   /* 
     The IonicUIRouter.js UI-Router Modification is being used for this route.
