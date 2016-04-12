@@ -1,0 +1,18 @@
+<ion-view style="background-color: rgb(255, 216, 222);" id="page3" title="Chat">
+    <ion-content class="has-header" overflow-scroll="true" padding="true">
+        <div style=""></div>
+        <ion-list style="">
+            <ion-item style="" class="item-thumbnail-left" ng-repeat="message in messages">
+                {{message.text}}  
+            </ion-item>
+           
+        </ion-list>
+                <form style="" class="list">
+            <label style="" class="item item-input">
+                <span class="input-label">Ny besked</span><textarea ng-model="newMessage" placeholder=""> </textarea>
+            </label>
+        </form>
+        <a class="button button-positive  button-block icon-left ion-android-add" id="chat-button5" ng-click="send(newMessage)">Send</a>
+
+    </ion-content>
+</ion-view>
